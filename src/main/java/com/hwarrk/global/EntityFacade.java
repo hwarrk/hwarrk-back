@@ -1,18 +1,16 @@
 package com.hwarrk.global;
 
-import com.hwarrk.domain.project.entity.Project;
-import com.hwarrk.domain.project.repository.ProjectRepository;
-import com.hwarrk.domain.project_join.entity.ProjectJoin;
-import com.hwarrk.domain.project_join.repository.ProjectJoinRepository;
+import com.hwarrk.entity.Project;
+import com.hwarrk.repository.ProjectRepository;
+import com.hwarrk.entity.ProjectJoin;
+import com.hwarrk.repository.ProjectJoinRepository;
 import com.hwarrk.global.common.apiPayload.code.statusEnums.ErrorStatus;
 import com.hwarrk.global.common.exception.GeneralHandler;
-import com.hwarrk.domain.member.entity.Member;
-import com.hwarrk.domain.member.repository.MemberRepository;
+import com.hwarrk.entity.Member;
+import com.hwarrk.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 
 @Transactional
